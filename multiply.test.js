@@ -30,9 +30,36 @@ it('Should compare 2 objects', () => {
 
 }) 
 
-// Arrays Comoarison
+// Arrays Length Comparison
 it('Should compare length of array', () => {
 
     expect([1, 2, 3]).toHaveLength(3);
+
+}) 
+
+it('Should contains the certain value', () => {
+
+    expect([1, 2, 3]).toContain(3);
+
+}) 
+
+it('Should not contains the certain value', () => {
+
+    expect([1, 2, 3]).not.toContain(10);
+
+}) 
+
+it('Should check that array is not undefined', () => {
+
+    const res = [1, 2, 3];
+
+    // Array is not undefind
+    expect(res).not.toBeUndefined();
+
+    // Array is defined
+    expect(res).toBeDefined();
+
+    // Array is not empty
+    expect(res).toBeTruthy();
 
 }) 
