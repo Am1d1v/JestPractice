@@ -9,6 +9,26 @@ describe('Math ', () => {
             const res = divide(10, 2);
             expect(res).toBe(5);
         })
+
+        // Skipped Test
+        it.skip('Skipped', () => {});
+
+        // Only Test
+        // it.only('Should return result of first arg divided by the second arg', () => {
+        //     const res = divide(30, 10);
+        //     expect(res).toBe(3);
+        // })
+
+        // Each 
+        it.each([
+            {inputA: 6,inputB: 3,expected: 2},
+            {inputA: 15,inputB: 5,expected: 3},
+            {inputA: 10,inputB: 0,expected: Infinity},      
+        ])('should $inputA divided by $inputB equals $expected', ({inputA, inputB, expected}) => {
+            const result = divide(inputA, inputB);
+
+            expect(result).toBe(expected);
+        });
         
         it('Should return Infinity', () => {
             const res = divide(10, 0);
