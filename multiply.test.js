@@ -7,9 +7,10 @@ describe('Multiply numbers', () => {
 
         const res = multiply(2, 3);
         
-        expect(res).toBe(6);
+        expect(res).toBe(6); // ===
 
     });
+
 
     it('should multiply negative numbers', () => {
 
@@ -20,3 +21,18 @@ describe('Multiply numbers', () => {
     });
 
  })
+
+
+// Objects Comparison
+it('Should compare 2 objects', () => {
+
+    expect({a: 1}).toEqual({a: 1})
+
+}) 
+
+// Arrays Comoarison
+it('Should compare length of array', () => {
+
+    expect([1, 2, 3]).toHaveLength(3);
+
+}) 
