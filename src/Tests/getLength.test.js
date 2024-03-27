@@ -13,7 +13,19 @@ describe('Get Length of the provided array', () => {
         expect(res).toBe(1);
     });
 
+    // Fit
+    fit('Should return 1 for an empty array', () => {
+        const res = getLength([1]);
+        expect(res).toBe(1);
+    });
+
     it('Should return 2 for an empty array', () => {
+        const res = getLength([1, 2]);
+        expect(res).toBe(2);
+    });
+
+    // Xit
+    xit('Should return 2 for an empty array', () => {
         const res = getLength([1, 2]);
         expect(res).toBe(2);
     });
