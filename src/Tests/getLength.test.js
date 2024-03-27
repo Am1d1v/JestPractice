@@ -2,6 +2,16 @@ import { getLength } from "../getLength";
 
 describe('Get Length of the provided array', () => {
 
+    // Before all
+    beforeAll(() => {
+        console.log('Basic setup');
+    })
+
+    // Before Each
+    beforeEach(() => {
+        console.log('Run setup before each test case');
+    })
+
     // Multiple Only Tests
     it.only('Should return 0 for an empty array', () => {
         const res = getLength([]);
@@ -38,5 +48,14 @@ describe('Get Length of the provided array', () => {
     // todo
     it.todo('Should return 0 for an empty array');
 
+    // After Each
+    afterEach(() => {
+        console.log('Teardown after each test case');
+    })
+
+    // After All
+    afterAll(() => {
+        console.log('Clean Up');
+    })
 
 });
