@@ -9,8 +9,24 @@ const errorSpy = jest.spyOn(console, 'error');
 
 describe('getTodos', () => {
 
-    it('Should return an empty array in case of error and print error to console', );
+    it.only('Should return an empty array in case of error and print error to console', async() => {
 
-    it('Should return array of todos', );
+        const errMessage = 'Network Error';
+
+        // Mock Error
+        axiosSpy.mockImplementationOnce(() => Promise.reject(errMessage));
+
+    });
+
+    it('Should return array of todos', async () => {
+        const result = await getTodos();
+        
+        // Axios spy have been called
+        expect(axiosSpy).toHaveBeenCalled();
+
+        // Axios was called with certain argument
+        expect(axiosSpy).toHaveBeenCalledWith('https://jsonplaceholder.typicode.com/todos')
+        
+    });
 
 });
