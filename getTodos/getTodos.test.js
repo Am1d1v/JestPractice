@@ -9,7 +9,7 @@ const errorSpy = jest.spyOn(console, 'error');
 
 describe('getTodos', () => {
 
-    it.only('Should return an empty array in case of error and print error to console', async() => {
+    it('Should return an empty array in case of error and print error to console', async() => {
 
         const errMessage = 'Network Error';
 
