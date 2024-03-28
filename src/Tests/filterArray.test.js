@@ -4,7 +4,7 @@ import { basketWithNoQuantity, filteredBasketWithQuantityOnly } from "../../Mock
 // Spies
 const logSpy = jest.spyOn(console, 'log');
 
-describe('filterArray()', () => {
+describe('filtereArray()', () => {
 
     // Clear All Mocks
     afterEach(() => {
