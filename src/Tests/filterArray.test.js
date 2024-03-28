@@ -1,5 +1,5 @@
-import { filterArray } from "../../filterArray";
-import { basketWithNoQuantity, filteredBasketWithQuantityOnly } from "../../Mocks/basket.mock";
+import { filterArray } from "../filterArray";
+import { basketWithNoQuantity, filteredBasketWithQuantityOnly } from "../Mocks/basket.mock";
 
 // Spies
 const logSpy = jest.spyOn(console, 'log');
