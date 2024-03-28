@@ -5,8 +5,16 @@ const config = {
     collectCoverageFrom: [
       '<rootDir>/src/**/*.{js, jsx, ts, tsx}',
       '!**/node_modules/**',
-      '!<rootDir>/src/**/*.mock.*'
-    ]
+      '!<rootDir>/src/**/*.mock.*',
+    ],
+    coverageThreshold: {
+      global: {
+        branches: 80,
+        functions: 80,
+        lines: 80,
+        statements: 80
+      }
+    }
   };
   
   module.exports = config;
