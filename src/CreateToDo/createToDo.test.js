@@ -46,11 +46,19 @@ describe('createToDo', () => {
 
     })
 
-    it('Should throw an error if getch response is not ok', async () => {
+    it('Should throw an error if there is Network Error', async () => {
 
         fetch.mockRejectedValueOnce('Network Error');
 
         await expect(createToDoOnServer('My Todo')).rejects.toMatch('Network Error');
+
+    });
+
+    it('Should throw an error from function when response not ok', async () => {
+
+        fetch.mockResolvedValueOnce({ok: false});
+
+        await expect(createToDoOnServer('ToDo')).toThrow('Cannot create ToDo')
 
     });
 
