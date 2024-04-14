@@ -58,7 +58,10 @@ describe('createToDo', () => {
 
         fetch.mockResolvedValueOnce({ok: false});
 
-        await expect(createToDoOnServer('ToDo')).toThrow('Cannot create ToDo')
+        //await expect(createToDoOnServer('ToDo')).toThrow('Cannot create ToDo')
+        const fnToThrow = () => createToDoOnServer('ToDo');
+
+        expect(fnToThrow).rejects.toThrow('Cannot create ToDo');
 
     });
 
