@@ -65,4 +65,12 @@ describe('createToDo', () => {
 
     });
 
+    it('Should throw an error if title is not provided', () => {
+
+        const fnToThrow = () => createToDo('');
+
+        expect(fnToThrow).toThrow('No title provided');
+
+    });
+
 });

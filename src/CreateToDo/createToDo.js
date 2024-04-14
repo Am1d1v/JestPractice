@@ -2,11 +2,16 @@ import { v4 } from "uuid";
 
 export function createToDo(title){
     
+    if(!title){
+        throw new Error ('No title provided');
+    }
+
     return{
         title,
         completed: false,
         id: v4()
     }
+
 }
 
 export async function createToDoOnServer(title){
@@ -16,7 +21,7 @@ export async function createToDoOnServer(title){
         body: JSON.stringify(createToDo(title))
     });
 
-    if(!response.ok) throw Error('Cannot create ToDo');
+    if(!response.ok) throw new Error('Cannot create ToDo');
 
     return response.json();
 }
