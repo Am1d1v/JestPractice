@@ -65,11 +65,23 @@ describe('createToDo', () => {
 
     });
 
-    it('Should throw an error if title is not provided', () => {
+   /*  it('Should throw an error if title is not provided', () => {
 
         const fnToThrow = () => createToDo('');
 
         expect(fnToThrow).toThrow('No title provided');
+
+    }); */
+
+    it('Should throw an error if title is not provided', (done) => {
+
+       try {
+        createToDo('');
+        done('CreateToDo should throw an error for invalid values');
+       } catch (error) {
+        expect(error.message).toBe('No title provided');
+        done();
+       }
 
     });
 
