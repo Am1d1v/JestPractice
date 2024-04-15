@@ -4,4 +4,6 @@
 /jest.config.js
 /babel.config.js
 /.vscode
+/.env
+
 coverage
