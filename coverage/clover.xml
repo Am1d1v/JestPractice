@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1713175123818" clover="3.2.0">
-  <project timestamp="1713175123818" name="All files">
-    <metrics statements="60" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="25" coveredmethods="0" elements="91" coveredelements="0" complexity="0" loc="60" ncloc="60" packages="6" files="11" classes="11"/>
+<coverage generated="1713176864794" clover="3.2.0">
+  <project timestamp="1713176864794" name="All files">
+    <metrics statements="62" coveredstatements="2" conditionals="8" coveredconditionals="2" methods="26" coveredmethods="1" elements="96" coveredelements="5" complexity="0" loc="62" ncloc="62" packages="7" files="12" classes="12"/>
     <package name="src">
       <metrics statements="9" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <file name="addByX.js" path="E:\D\InstructorMikhailNepomnyashiy\TestJSReact\JestPractice\src\addByX.js">
@@ -60,6 +60,14 @@
         <line num="5" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.Snapshots">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="createUser.js" path="E:\D\InstructorMikhailNepomnyashiy\TestJSReact\JestPractice\src\Snapshots\createUser.js">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
       </file>
     </package>
     <package name="src.Tests">

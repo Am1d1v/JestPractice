@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createUser Should create a user with firstname and lastname only 1`] = `
+{
+  "email": "",
+  "firstName": "D",
+  "lastName": "Surname",
+  "password": "password",
+  "phone": "",
+  "type": "USER",
+}
+`;
