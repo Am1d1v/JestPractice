@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1713174429853" clover="3.2.0">
-  <project timestamp="1713174429854" name="All files">
-    <metrics statements="63" coveredstatements="2" conditionals="11" coveredconditionals="4" methods="26" coveredmethods="1" elements="100" coveredelements="7" complexity="0" loc="63" ncloc="63" packages="7" files="12" classes="12"/>
+<coverage generated="1713175123818" clover="3.2.0">
+  <project timestamp="1713175123818" name="All files">
+    <metrics statements="60" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="25" coveredmethods="0" elements="91" coveredelements="0" complexity="0" loc="60" ncloc="60" packages="6" files="11" classes="11"/>
     <package name="src">
       <metrics statements="9" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <file name="addByX.js" path="E:\D\InstructorMikhailNepomnyashiy\TestJSReact\JestPractice\src\addByX.js">
@@ -33,15 +33,6 @@
         <line num="18" count="0" type="stmt"/>
         <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="26" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.CustomMatcher">
-      <metrics statements="3" coveredstatements="2" conditionals="5" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <file name="custom-matcher.js" path="E:\D\InstructorMikhailNepomnyashiy\TestJSReact\JestPractice\src\CustomMatcher\custom-matcher.js">
-        <metrics statements="3" coveredstatements="2" conditionals="5" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="5" count="2" type="cond" truecount="4" falsecount="1"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.Math">

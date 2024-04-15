@@ -8,6 +8,10 @@ function toBeWithinRange(actual, floor, ceiling){
             throw new TypeError('These must be of type number')
         }
 
+    if(actual < floor) return false;
+    if(actual > ceiling) return false;
+    if(actual > floor && actual < ceiling) return true;    
+
 }
 
 
